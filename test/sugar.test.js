@@ -54,7 +54,7 @@ describe("Object.min", () => {
   });
 });
 
-describe.only("Object.max", () => {
+describe("Object.max", () => {
   test("returns the largest number of all values in an object", () => {
     expect(
       Object.max({
@@ -308,7 +308,7 @@ describe("Object.find", () => {
   });
 });
 
-describe("Object.every", () => {
+describe.only("Object.every", () => {
   test("returns true if all values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -344,7 +344,7 @@ describe("Object.every", () => {
   });
 });
 
-describe("Object.some", () => {
+describe.only("Object.some", () => {
   test("returns true if one or more values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
